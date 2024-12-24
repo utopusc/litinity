@@ -4,7 +4,7 @@
 		"src": "package.json",
 		"use": "@vercel/node",
 		"config": {
-		  "installCommand": "pnpm install --legacy-peer-deps && pnpm install @sveltejs/vite-plugin-svelte@latest svelte@latest unplugin-icons@latest vite@latest vite-plugin-pwa@latest"
+		  "installCommand": "npm install --legacy-peer-deps && npm install @sveltejs/vite-plugin-svelte@latest svelte@latest unplugin-icons@latest vite@latest vite-plugin-pwa@latest"
 		}
 	  }
 	],
