@@ -1,11 +1,10 @@
 {
-	"version": 2,
 	"builds": [
 	  {
 		"src": "package.json",
 		"use": "@vercel/node",
 		"config": {
-		  "installCommand": "pnpm install --no-frozen-lockfile && pnpm install @sveltejs/vite-plugin-svelte@latest svelte@latest unplugin-icons@latest vite@latest vite-plugin-pwa@latest"
+		  "installCommand": "pnpm install --legacy-peer-deps && pnpm install @sveltejs/vite-plugin-svelte@latest svelte@latest unplugin-icons@latest vite@latest vite-plugin-pwa@latest"
 		}
 	  }
 	],
@@ -26,12 +25,6 @@
 			"value": "public, max-age=31536000, immutable"
 		  }
 		]
-	  }
-	],
-	"routes": [
-	  {
-		"src": "/(.*)",
-		"dest": "/index.html"
 	  }
 	]
   }
