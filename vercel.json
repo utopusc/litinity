@@ -1,21 +1,31 @@
 {
-	"headers": [
-		{
-			"source": "/(.*)\\.webp",
-			"headers": [
-				{
-					"key": "Cache-Control",
-					"value": "public, max-age=31536000, immutable"
-				},
-				{
-					"key": "CDN-Cache-Control",
-					"value": "public, max-age=31536000, immutable"
-				},
-				{
-					"key": "Vercel-CDN-Cache-Control",
-					"value": "public, max-age=31536000, immutable"
-				}
-			]
+	"builds": [
+	  {
+		"src": "package.json",
+		"use": "@vercel/node",
+		"config": {
+		  "installCommand": "pnpm install --legacy-peer-deps && pnpm install @sveltejs/vite-plugin-svelte@latest svelte@latest unplugin-icons@latest vite@latest vite-plugin-pwa@latest"
 		}
+	  }
+	],
+	"headers": [
+	  {
+		"source": "/(.*)\\.webp",
+		"headers": [
+		  {
+			"key": "Cache-Control",
+			"value": "public, max-age=31536000, immutable"
+		  },
+		  {
+			"key": "CDN-Cache-Control",
+			"value": "public, max-age=31536000, immutable"
+		  },
+		  {
+			"key": "Vercel-CDN-Cache-Control",
+			"value": "public, max-age=31536000, immutable"
+		  }
+		]
+	  }
 	]
-}
+  }
+  
