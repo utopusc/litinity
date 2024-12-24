@@ -1,13 +1,13 @@
 {
 	"builds": [
-	  {
-		"src": "package.json",
-		"use": "@vercel/node",
-		"config": {
-		  "installCommand": "npm install --legacy-peer-deps && npm install @sveltejs/vite-plugin-svelte@latest svelte@latest unplugin-icons@latest vite@latest vite-plugin-pwa@latest"
+		{
+		  "src": "package.json",
+		  "use": "@vercel/node",
+		  "config": {
+			"installCommand": "pnpm install --no-frozen-lockfile && pnpm install @sveltejs/vite-plugin-svelte@latest svelte@latest unplugin-icons@latest vite@latest vite-plugin-pwa@latest"
+		  }
 		}
-	  }
-	],
+	  ],
 	"headers": [
 	  {
 		"source": "/(.*)\\.webp",
