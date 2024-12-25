@@ -28,8 +28,8 @@
 				<TwitterIcon />
 				Twitter
 			</a>
-			<a href="https://www.puruvj.dev/github" use:external> <GithubIcon /> Github </a>
-			<a href="https://www.puruvj.dev/devto" use:external> <DevToIcon /> Dev.to </a>
+			<a href="https://github.com/utopusc" use:external> <GithubIcon /> Github </a>
+			<a href="https://bozturk.tech" use:external> <DevToIcon /> bozturk.tech </a>
 		</nav>
 	</aside>
 

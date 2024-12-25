@@ -37,7 +37,7 @@ const finder = create_app_config({
 	title: 'Finder',
 	resizable: true,
 
-	// dockBreaksBefore: true,
+	//dockBreaksBefore: true,
 	should_open_window: false,
 });
 
@@ -49,6 +49,10 @@ const safari = create_app_config({
 const systemPreferences = create_app_config({
 	title: 'System Preferences',
 	resizable: true,
+
+
+	height: 1380,
+	width: 900,
 });
 
 const purusTwitter = create_app_config({
@@ -62,11 +66,11 @@ const purusTwitter = create_app_config({
 });
 
 const viewSource = create_app_config({
-	title: `View Source`,
+	title: `GitHub`,
 	resizable: true,
 
-	should_open_window: false,
-	external_action: () => window.open('https://github.com/puruvj/macos-web', '_blank'),
+	height: 600,
+	width: 800,
 });
 
 const vercel = create_app_config({
@@ -83,6 +87,7 @@ const vercel = create_app_config({
 const appstore = create_app_config({
 	title: 'App Store',
 	resizable: true,
+
 });
 
 export const apps_config = {
@@ -92,9 +97,9 @@ export const apps_config = {
 	calendar,
 	vscode,
 	appstore,
-	// safari,
+	safari,
 
-	// 'system-preferences': systemPreferences,
+	'system-preferences': systemPreferences,
 
 	'purus-twitter': purusTwitter,
 	'view-source': viewSource,

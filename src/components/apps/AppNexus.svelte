@@ -22,6 +22,10 @@
 	{#await import('./Calculator/Calculator.svelte') then { default: Calculator }}
 		<Calculator />
 	{/await}
+{:else if app_id === 'view-source'}
+	{#await import('./GitHub/GitHub.svelte') then { default: VSCode }}
+		<VSCode {is_being_dragged} />
+	{/await}
 {:else if app_id === 'wallpapers'}
 	{#await import('./WallpaperApp/WallpaperSelectorApp.svelte') then { default: WallpaperSelector }}
 		<WallpaperSelector />
