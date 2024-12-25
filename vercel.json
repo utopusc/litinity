@@ -2,9 +2,11 @@
 	"builds": [
 	  {
 		"src": "package.json",
-		"use": "@vercel/node",
+		"use": "@vercel/static-build",
 		"config": {
-		  "installCommand": "pnpm install --legacy-peer-deps && pnpm install @sveltejs/vite-plugin-svelte@latest svelte@latest unplugin-icons@latest vite@latest vite-plugin-pwa@latest"
+		  "installCommand": "pnpm install --legacy-peer-deps && pnpm install @sveltejs/vite-plugin-svelte@latest svelte@latest unplugin-icons@latest vite@latest vite-plugin-pwa@latest",
+		  "buildCommand": "pnpm run build",
+		  "outputDirectory": "dist"
 		}
 	  }
 	],
